@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Final Project</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="js/d3.min.js"></script>-->
+<!--<script src="js/jquery.min.js"></script>-->
+<!--<script src="Scrollify/jquery.scrollify.js"></script>-->
+
+<!--<script src="js/main.js"></script>-->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--<script>-->
+<!--$('#carousel-example-generic').carousel({-->
+<!--interval: 2000-->
+<!--})-->
+<!--</script>-->
+
+<!-- Load JS libraries -->
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/topojson.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/d3-legend.min.js"></script>
+<script src="js/d3.slider.js"></script>
+
+<!-- Visualization files -->
+<script>
+    var svg  = d3.select("body").append("svg")
+        .attr("height", 500)
+        .attr("width", 800);
+
+    svg.append("circle")
+        .attr("cx", 100)
+        .attr("cy",100)
+        .attr("r", 10)
+        .style("fill", "black");
+    d3.select("circle")
+        .transition()
+        .duration(3000)
+        .attr("cx", 200)
+        .transition()
+        .duration(2000)
+        .attr("cx", 40)
+        .transition()
+        .attr("cx", 400)
+        .transition()
+        .attr("cy", 200)
+        .transition()
+        .attr("r", 30)
+</script>
+
+
+<script src="scrollify/jquery.scrollify.js"></script>
+<script src="js/structure.js"></script>
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-50992962-1', 'lukehaas.me');
+ga('send', 'pageview');</script>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--<script>-->
+<!--$('#carousel-example-generic').carousel({-->
+<!--interval: 2000-->
+<!--})-->
+<!--</script>-->
+
+
+<!--<script src="scrollify/jquery.scrollify.js"></script>-->
+<!--<script src="js/structure.js"></script>-->
+
+
+</body>
+</html>

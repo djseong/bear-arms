@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Final Project</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <section class="panel home" data-section-name="home">
+            <div class="inner">
+                <div class="header-content">
+                    <h1>Gun Violence in the U.S.</h1>
+                </div>
+                <div class="gallery0"><img  src="img/gun.jpg" /></div>
+                <div class="footer-subtitle">
+                    <p>CS 171 Final Project: Michel Li, Daniel Seong, Alex Lin, Emily Chen</p>
+                </div>
+            </div>
+
+
+            <ul class="pagination">
+                <li2><a href="#home" class="active"><span class="hover-text">Home</span></a></li2>
+                <li2><a href="#info1"><span class="hover-text">U.S. & the World</span></a></li2>
+                <li2><a href="#info2"><span class="hover-text">Mass Shootings</span></a></li2>
+                <li2><a href="#map"><span class="hover-text">Hover Map</span></a></li2>
+                <li2><a href="#info3"><span class="hover-text">Victims</span></a></li2>
+                <li2><a href="#memoriam"><span class="hover-text">Memoriam</span></a></li2>
+                <li2><a href="#info4"><span class="hover-text">Trends</span></a></li2>
+                <li2><a href="#stats"><span class="hover-text">Statistics</span></a></li2>
+                <li2><a href="#closing"><span class="hover-text">Closing</span></a></li2>
+                <li2><a href="#data"><span class="hover-text">The Data</span></a></li2>
+            </ul>
+        </section>
+
+        <section class="panel info1" data-section-name="info1">
+            <div class="inner">
+                <div class="content">
+                    <ul>
+                        <li>The U.S. has more than 393 million guns in circulation — approximately 88.9 guns for every 100 people.</li>
+                        <li>The U.S. comprises 5% of the world's population, yet we own 35-50% of every type of gun worldwide.</li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="col-md-7"><img src="img/gun.png" width="100%"/></div>
+                        <div class="col-md-5">
+                            <ul>
+                                <li>The U.S. has many more guns per capita than any other country.</li>
+                                <li style="font-weight:bold">How has this prevalance of guns affected the lives of Americans?</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-right">
+                        <p>Data from <a href="https://injury.research.chop.edu/violence-prevention-initiative/types-violence-involving-youth/gun-violence/gun-violence-facts-and#.XALAIxNKgWp" target="_blank">Children's Hospital of Philadelphia "Gun Violence: Facts and Statistics" </a> & <a href="https://www.vox.com/2015/10/1/18000444/gun-crime-us-foreign-countries" target="_blank">Vox: "Gun crime is more prevalent in the US than in other rich countries"</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel info2" data-section-name="info2">
+            <div class="inner">
+                <div class="content">
+                    <ul>
+                        <li>Between 1982 and April 2018, 99 mass shootings have occurred in the U.S.</li>
+                        <li2>In 2017 alone, 11 mass shootings in the U.S. caused 117 fatalities and 587 injuries occurring in concert, religious, workplace, airport, and shopping venues and in the community.</li2>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <div id="video">
+                                <div>
+                                    <iframe width="530" height="305" src="https://www.youtube.com/embed/ih5_5-LtPP4?start=23" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="slideshow-container">
+                            <div id="slideshow">
+                                <div>
+                                    <img src="img/orlando.png" width="530" height="305">
+                                </div>
+                                <div>
+                                    <img src="img/columbine.jpg" width="530" height="305">
+                                </div>
+                                <div>
+                                    <img src="img/thousandoaks.jpg" width="530" height="305">
+                                </div>
+                                <div>
+                                    <img src="img/texas.jpg" width="530" height="305">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p>Data from <a href="https://www.vox.com/2015/10/1/18000444/gun-crime-us-foreign-countries" target="_blank">Vox: "Gun crime is more prevalent in the US than in other rich countries"</a></p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="panel map" data-section-name="map">
+            <div class="inner">
+                <div class="content">
+                    <h2>Where do these mass shootings occur?</h2>
+                    <p>Below is a map of incidents of gun violence found in our dataset, with each circle representing one shooting and the size corresponding to number killed. Toggle the scale to filter to the most lethal incidents.</p>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-2" id="sliderlabels">
+                                <span>Filter by Top:</span><p id="value1"></p><span>Lethal Incidents</span>
+                            </div>
+                            <div class="col-sm">
+                                <div id="slider1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="incidents-map"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel info3" data-section-name="info3">
+            <div class="inner">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="quote">
+                                <p>“If we all stood up and said, 'enough is enough,' Alex would still be alive.”</p>
+                            </div>
+                            <div class="subquote">
+                                <p align="right">―Caren Teves, who lost her son Alex in the 2012 Aurora, CO movie theater massacre</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="quote">
+                                <p>“You kind of wonder with every passing shooting, what will be the proverbial straw that breaks the camel’s back.”</p>
+                            </div>
+                            <div class="subquote">
+                                <p align="right">―Tina Meins, whose father, Damian Meins, was killed in the 2015 San Bernardino, CA shooting</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-right">
+                        <p1>Data from <a2 href="https://www.theguardian.com/us-news/ng-interactive/2017/nov/14/stories-of-loss-love-and-hope-six-firsthand-accounts-from-some-of-americas-worst-mass-shootings" target="_blank">The Guardian: "Stories of loss, love and hope"</a2></p1>
+                    </div>
+                </div>
+        </section>
+
+        <section class="panel memoriam" data-section-name="memoriam">
+            <div class="inner">
+                <div class="content">
+                    <h2>Who are the victims?</h2>
+                    <p>The following is a memoriam of victims of the shootings depicted above. Hover over individual dots to uncover more information about victims. Toggle the time scale and play the time lapse to see the severity of premature deaths due to gun violence.</p>
+                    <div class="row align-items-start top-20">
+                        <div class="col-sm-3">
+                            <div>Dead by Age: <span class="memoriam-label" id="value2"></span></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="slider2"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div>Deaths: <span class="memoriam-label" id="total-deaths"></span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 offset-sm-3">
+                            <button id="memoriam-button" class="btn btn-dark center" type="button" onclick="memoriam.playMemoriam()">Play</button>
+                            <div id="memoriam"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel info4" data-section-name="info4">
+            <div class="inner">
+                <div class="content">
+                    <ul>
+                        <li>We remember those who have lost family members and friends due to the tragedy of gun violence.</li>
+                        <li>As we dig into the sobering data, we uncover the following additional trends. . .</li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <p1>Image: <a2 href="https://www.theguardian.com/us-news/ng-interactive/2017/nov/14/stories-of-loss-love-and-hope-six-firsthand-accounts-from-some-of-americas-worst-mass-shootings" target="_blank">Erica Lafferty, daughter of Sandy Hook elementary school shooting victim, Dawn Hochsprung, and Carlee Soto, sister of victim Victoria Soto</a2></p1>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel stats" data-section-name="stats">
+            <div class="inner">
+                <div class="content">
+                    <h2>Trends Over Time</h2>
+                    <p>The following shows the number of people affected in mass shootings over the years. Brush over the left line graph to filter the data to a specific time window.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="timeplot"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="barplot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel closing" data-section-name="closing">
+            <div class="inner">
+                <div class="content">
+                    <div class="text">
+                        <p>Some kind of closing statement here...</p>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/map.png" width=700px>
+                    </div>
+                    <div class="text">
+                        <p>“Violence isn't a Democrat or Republican problem. It's an American problem, requiring an American solution.”</p>
+                        <p1>―<a href="https://twitter.com/DaShanneStokes?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">DaShanne Stokes</a></p1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel data" data-section-name="data">
+            <div class="inner">
+                <div class="content">
+                    <h3>The Data</h3>
+                    <ul>
+                        <li>The data used for this project is taken from: <a href="https://github.com/jamesqo/gun-violence-data" target="_blank">Gun Violence Data Repository</a></li>
+                        <li>Other sources of information include:
+                            <ul class="dashed">
+                                <li><a href="https://injury.research.chop.edu/violence-prevention-initiative/types-violence-involving-youth/gun-violence/gun-violence-facts-and#.XALAIxNKgWp" target="_blank">Children's Hospital of Philadelphia "Gun Violence: Facts and Statistics" </a></li>
+                                <li><a href="https://www.vox.com/2015/10/1/18000444/gun-crime-us-foreign-countries" target="_blank">Vox: "Gun crime is more prevalent in the US than in other rich countries"</a></li>
+                                <li><a href="https://www.theguardian.com/us-news/ng-interactive/2017/nov/14/stories-of-loss-love-and-hope-six-firsthand-accounts-from-some-of-americas-worst-mass-shootings" target="_blank">The Guardian: "Stories of loss, love and hope"</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Load JS libraries -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-1.11.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/queue.min.js"></script>
+        <script src="js/topojson.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/d3-tip.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/d3-legend.min.js"></script>
+        <script src="js/d3.slider.js"></script>
+
+        <!-- Visualization files -->
+        <script src="js/incidentsMap.js"></script>
+        <script src="js/timeplot.js"></script>
+        <script src="js/barplot.js"></script>
+        <script src="js/memoriam.js"></script>
+        <script src="js/main.js"></script>
+
+
+        <script src="scrollify/jquery.scrollify.js"></script>
+        <script src="js/structure.js"></script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-50992962-1', 'lukehaas.me');
+        ga('send', 'pageview');</script>
+    </body>
+</html>
